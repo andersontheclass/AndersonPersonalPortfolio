@@ -172,7 +172,7 @@ body {
       .biography-col--colored .biography__caption-span {
         padding: 1rem; }
         .biography-col--colored .biography__caption-span--1 {
-          background-image: linear-gradient(to left top, rgba(113, 98, 245, 0.25), rgba(255, 218, 121, 0.25)); }
+          background-image: linear-gradient(to left top, rgba(113, 98, 245, 0.29), rgba(255, 218, 121, 0.37)); }
     .biography-col--colored .biography__text {
       margin-top: 2.8rem;
       text-align: justify; }
