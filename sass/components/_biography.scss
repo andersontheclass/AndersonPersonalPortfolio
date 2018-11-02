@@ -11,7 +11,7 @@
     }
     
     &:active:hover {
-        transform: rotate(180deg);
+        //transform: rotate(180deg);
     }
 
     .biography {
@@ -108,4 +108,8 @@
             text-align: justify;
         }
     }
+}
+
+.js--show-more {
+    display: none;
 }

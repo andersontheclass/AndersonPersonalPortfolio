@@ -20,36 +20,55 @@
                     <span class="heading-primary--main">Hello I am Anderson</span>
                     <span class="heading-primary--sub">new to front-end development</span>
                 </h1>
-                <a href="#" class="btn">... learn more</a>
+                <div class="row">
+                    <a class="btn btn--learn-more" href="#">learn more &rarr;</a>
+                </div>
             </div>
         </header>
         <main>
-            <section class="section-projects">
+            <section class="section-project">
                 <!-- 2x2 matrix with the 4 fcc done projects -->
-                <div class="project">
-                    <div>
-                        <h3 class="heading-tertiary">Tribute Page</h3>
-                    </div>
-                    <figure><img src="" alt="Tribute page" class="project__img"></figure>
+                <div class="u-center-text u-margin-bottom-medium">
+                    <h2 class="heading-secondary">My Projects</h2>
                 </div>
-                <div class="project">
-                    <div>
-                        <h3 class="heading-tertiary">Form Page</h3>   
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <a href="#" class="project-box">
+                            <figure><img src="" alt="Tribute page" class="project-box__img"></figure>
+                            <div>
+                                <h3 class="heading-tertiary">Tribute Page</h3>
+                            </div>
+                        </a>
                     </div>
-                    <figure><img src="" alt="Form page" class="project__img"></figure>
-                </div>
-                <div class="project">
-                    <div>
-                        <h3 class="heading-tertiary">Landing Page</h3>   
+                    <div class="col-1-of-2">
+                        <a href="#" class="project-box">
+                            <figure><img src="" alt="Form page" class="project-box__img"></figure>
+                            <div>
+                                <h3 class="heading-tertiary">Form Page</h3>
+                            </div>
+                        </a>
                     </div>
-                    <figure><img src="" alt="Landing page" class="project__img"></figure>
                 </div>
-                <div class="project">
-                    <div>
-                        <h3 class="heading-tertiary">Technical Doc. Page</h3>
+                
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <a href="#" class="project-box">
+                            <figure><img src="" alt="Landing page" class="project-box__img"></figure>
+                            <div>
+                                <h3 class="heading-tertiary">Landing Page</h3>
+                            </div>
+                        </a>
                     </div>
-                    <figure><img src="" alt="Technical doc. page" class="project__img"></figure>
+                    <div class="col-1-of-2">
+                        <a href="#" class="project-box">
+                            <figure><img src="" alt="Technical Doc. page" class="project-box__img"></figure>
+                            <div>
+                                <h3 class="heading-tertiary">Technical Doc. Page</h3>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                
             </section>
 
             <section class="section-biography">
@@ -72,6 +91,22 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. 
                                 </p>
                             </div>
+                            <div class="u-center-text u-margin-top-small">
+                                <button class="show btn btn--show-more" id="toggleButton">
+                                    <span>Show more ...</span>
+                                </button>
+                            </div>
+                            <div class="biography__text js--show-more">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. 
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. 
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id doloribus nisi cupiditate, qui voluptates ea error odit iure quod, quo neque porro accusamus adipisci dignissimos veritatis deserunt autem dicta. dignissimos veritatis deserunt autem dicta. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                     
@@ -85,5 +120,7 @@
 
 
         </footer>
+        <script src="vendors/js/jquery.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>

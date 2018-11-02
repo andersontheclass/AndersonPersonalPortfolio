@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+    padding: 1.5rem 3.5rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4.5rem;
+    font-size: $default-font-size;
+    outline: none;
+    color: $color-grey-light-1;
+    display: inline-block;
+    
+    @include respond(phone) {
+        padding: 1.1rem 2.6rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 1.2rem 2.7rem;
+    }
+    
+    &--learn-more {
+        
+        &:link,
+        &:visited {
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+        
+        &:hover {
+            background-image: linear-gradient(to top right, rgba($color-primary, .5), rgba($color-secondary, .5));
+        }
+
+        &:active {
+            transform: scale(1.03); 
+        }
+    }
+    
+    &--show-more {
+        background-image: linear-gradient(to top right, rgba($color-primary, .5), rgba($color-secondary, .5));
+
+        &:active {
+            transform: scale(1.03);    
+        }
+    } 
+}

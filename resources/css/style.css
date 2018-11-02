@@ -77,9 +77,9 @@ body {
   .heading-secondary:hover {
     text-shadow: 0.5rem 0.8rem 2.5rem rgba(0, 0, 0, 0.3); }
 
-.paragraph {
+p {
   font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
+  p:not(:last-child) {
     margin-bottom: 2rem; }
 
 .u-center-text {
@@ -115,8 +115,6 @@ body {
   transform: skewX(0);
   backface-visibility: hidden;
   transition: all 1s; }
-  .biography-col--colored:active:hover {
-    transform: rotate(180deg); }
   .biography-col--colored .biography {
     position: relative;
     margin: 0 auto;
@@ -177,6 +175,42 @@ body {
       margin-top: 2.8rem;
       text-align: justify; }
 
+.js--show-more {
+  display: none; }
+
+.btn {
+  padding: 1.5rem 3.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4.5rem;
+  font-size: 1.6rem;
+  outline: none;
+  color: #f7f7f7;
+  display: inline-block; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      padding: 1.1rem 2.6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      padding: 1.2rem 2.7rem; } }
+  .btn--learn-more:link, .btn--learn-more:visited {
+    text-decoration: none;
+    display: inline-block;
+    position: relative; }
+  .btn--learn-more:hover {
+    background-image: linear-gradient(to top right, rgba(34, 112, 147, 0.5), rgba(255, 218, 121, 0.5)); }
+  .btn--learn-more:active {
+    transform: scale(1.03); }
+  .btn--show-more {
+    background-image: linear-gradient(to top right, rgba(34, 112, 147, 0.5), rgba(255, 218, 121, 0.5)); }
+    .btn--show-more:active {
+      transform: scale(1.03); }
+
+.footer {
+  padding: 10rem 4rem;
+  font-size: 1.7rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -223,7 +257,8 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 100vh; }
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(34, 112, 147, 0.6), rgba(255, 218, 121, 0.5)); }
 
 .section-band-bio {
   padding-bottom: 8rem; }
