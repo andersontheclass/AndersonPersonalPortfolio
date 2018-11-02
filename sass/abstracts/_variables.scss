@@ -4,7 +4,7 @@
 
 // Colors
 $color-primary: #227093;
-$color-secondary: #34ace0;
+$color-secondary: #ffda79;
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -23,3 +23,9 @@ $color-white: #fff;
 
 // FONT
 $default-font-size: 1.6rem; 
+
+// GRID
+$grid-width: 114rem; //1140px / 10 = 114rem
+$gutter-vertical: 8rem; // 80px / 10 = 8 rem
+$gutter-vertical-small: 6rem; // 60px / 10 = 6 rem
+$gutter-horizontal: 6rem; // 60px / 10 = 6 rem

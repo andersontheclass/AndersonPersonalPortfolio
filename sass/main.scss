@@ -16,6 +16,7 @@
 
 // Layout-related sections
 @import "layout/footer";
+@import "layout/grid";
 @import "layout/header";
 
 // Page-specific styles
@@ -25,4 +26,5 @@
 @import "themes/default";
 
 // Vendors
-//@import "vendors/normalize";
+//@import "vendors/grid";
+@import "vendors/normalize";

@@ -7,7 +7,7 @@ body {
     font-weight: 400;
     
     line-height: 1.7;
-    color: $color-grey-dark-4;
+    color: $color-grey-dark-3;
 }
 
 .heading-secondary {
@@ -15,7 +15,7 @@ body {
     font-weight: 700;
     letter-spacing: .25rem;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, $color-primary, $color-secondary);
+    background-image: linear-gradient(to left, rgba($color-primary, .9), rgba($color-secondary, .4));
     -webkit-background-clip: text;
     color: transparent;
     transition: all .2s;  

@@ -1,33 +1,111 @@
-.biography {
+//
+.biography-col--colored {
+    background-image: linear-gradient(to bottom right, rgba($color-primary, .1), rgba($color-secondary, .1));
+    transform: skewY(0);
+    transform: skewX(0);
+    backface-visibility: hidden;
+    transition: all 1s;
     
-    margin: 0 auto;
-    
-    
-    display: grid;
-    //grid-template-rows: repeat(2, minmax(1fr, min-content));
-    //grid-template-columns: repeat(2, 1fr);
-    
-    //grid-template-rows: 1fr;
-    
-    width: 90%;
-    grid-template-rows: repeat(2, minmax(300px, min-content));
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 150px; /* it works great with responsiveness*/
-    
-    grid-gap: 0;
-    
-    &__shape {
-        background-color: yellowgreen;
+    &:hover {
+        //transform: rotate(-180deg);
     }
     
-    &__img {
-        //height: 100%;
-        height: 25rem;
-        width: 25rem;
-        border-radius: 55%;
+    &:active:hover {
+        transform: rotate(180deg);
     }
-    
-    &__text {
-        background-color: darkslategray;
+
+    .biography {
+        position: relative;
+        margin: 0 auto;
+        padding: 5rem 4rem;
+        width: 90%;
+        box-shadow: 0 .5rem 3.5rem rgba($color-black, 0.5);
+        font-size: $default-font-size;
+        
+        @include respond(tab-port) {
+            //width: 90%;
+            //padding: 4rem;
+            //padding-left: 5rem;
+        }
+
+        &__shape {
+
+        }
+
+        &__img {
+            height: 100%;
+            margin-left: 9%;
+            border-radius: 55%;
+            height: 25rem;
+            width: 25rem;
+            
+            @include respond(tab-port) {
+                //transform: translate(0) !important;
+                margin-left: -40%;
+                width: 20rem;
+                height: 20rem;  
+            }
+
+            @include respond(phone) {
+                //transform: translate(0) !important;
+                margin-left: -50%;
+                width: 15rem;
+                height: 15rem;
+            }
+        }
+
+
+        &__caption {
+            position: absolute;
+            margin-top: -5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transform: translateX(-80%) translateY(-20%);
+            color: rgba($color-black, .7);
+            
+            @include respond(tab-land) {
+                transform: translateX(-70%) translateY(0);
+            }
+            
+            @include respond(tab-port) {
+                transform: translateX(-10%) translateY(0);
+            }
+
+            @include respond(phone) {
+                transform: translateX(-10%) translateY(0);
+                margin-top: -2.6rem;
+            }
+
+            &--1 {
+                margin-left: 28%;
+
+                @include respond(tab-port) {
+                    margin-left: 13.7%;
+                }
+
+                @include respond(phone) {
+                    margin-left: 14.4%;
+                    margin-top: -2.8rem;
+                }
+            }
+
+
+            &-span {
+                padding: 1rem;
+
+                //-webkit-box-decoration-break: clone;
+                //box-decoration-break: clone;
+
+                &--1 {
+                    background-image: linear-gradient(to left top, rgba(113, 98, 245, 0.25), rgba(255, 218, 121, 0.25));
+                }
+
+            }
+        }
+
+        &__text {
+            margin-top: 2.8rem;
+            text-align: justify;
+        }
     }
 }

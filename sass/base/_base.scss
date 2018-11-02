@@ -1,5 +1,17 @@
-*,
-*::before,
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+* Make all elements from the DOM inherit from the parent box-sizing
+* Since `*` has a specificity of 0, it does not override the `html` value
+* making all elements inheriting from the root box-sizing value
+* See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+/* We use this because by default some elements have their our padding/margin */
+
+*, 
+*::before, 
 *::after {
     margin: 0;
     padding: 0;
@@ -7,9 +19,32 @@
 }
 
 html {
-    font-size: 62.5%; // 10px / 16 = 0.625 * 100 = "62.5%"
+    // It defines 1rem to 10px
+    font-size: 62.5%; /* 10px / 16 = 0.625 * 100 = "62.5%" */
+
+    @include respond(tab-port) { //width < 900?
+        font-size: 50%; //1rem = 8px; 8/16 = 0.5 * 100 = 50%;
+    }
+
+    @include respond(tab-land) { //width < 1200?
+        font-size: 49%; //1rem = 9px; 9/16 = 0.5625 * 100 = 56.25%;
+    } 
+
+    @include respond(phone) { //width < 600?
+        font-size: 40%; //
+    }
+
 }
 
 body {
+    /* change the box, so that the borders the and padding are no longer added to the total width or the total height */
+    /* that we specify for a box. So, without this any paddings, borders are added to the height or the width of an element  */
     box-sizing: border-box;
+    padding: 0;
+    text-rendering: optimizeLegibility;  
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }
