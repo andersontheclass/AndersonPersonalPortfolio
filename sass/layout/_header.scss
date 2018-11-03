@@ -1,4 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
 .header {
+    position: relative;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, rgba($color-primary, .6), rgba($color-secondary, .5));
+    background-image: linear-gradient(to top right, rgba($color-black, .88), rgba($color-secondary, .9)), url(../img/hero.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 10rem;
+    }
+    
+    &__text-box {
+        @include absCenter;
+        text-align: center;
+    }
+    
 }

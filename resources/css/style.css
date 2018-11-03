@@ -65,6 +65,26 @@ body {
   line-height: 1.7;
   color: #666; }
 
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  text-shadow: 0.5rem 0.8rem 2.7rem rgba(0, 0, 0, 0.65); }
+  .heading-primary--main {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: .9rem;
+    padding: 1rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
+
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 700;
@@ -194,14 +214,16 @@ p {
   @media only screen and (max-width: 56.25em) {
     .btn {
       padding: 1.2rem 2.7rem; } }
-  .btn--learn-more:link, .btn--learn-more:visited {
-    text-decoration: none;
-    display: inline-block;
-    position: relative; }
-  .btn--learn-more:hover {
-    background-image: linear-gradient(to top right, rgba(34, 112, 147, 0.5), rgba(255, 218, 121, 0.5)); }
-  .btn--learn-more:active {
-    transform: scale(1.03); }
+  .btn--learn-more {
+    background-image: linear-gradient(to top left, rgba(34, 112, 147, 0.5), rgba(255, 218, 121, 0.5)); }
+    .btn--learn-more:link, .btn--learn-more:visited {
+      text-decoration: none;
+      display: inline-block;
+      position: relative; }
+    .btn--learn-more:hover {
+      background-image: linear-gradient(to top right, rgba(34, 112, 147, 0.4), rgba(255, 218, 121, 0.4)); }
+    .btn--learn-more:active {
+      transform: scale(1.03); }
   .btn--show-more {
     background-image: linear-gradient(to top right, rgba(34, 112, 147, 0.5), rgba(255, 218, 121, 0.5)); }
     .btn--show-more:active {
@@ -257,8 +279,24 @@ p {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
+  position: relative;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, rgba(34, 112, 147, 0.6), rgba(255, 218, 121, 0.5)); }
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.88), rgba(255, 218, 121, 0.9)), url(../img/hero.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 10rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .section-band-bio {
   padding-bottom: 8rem; }

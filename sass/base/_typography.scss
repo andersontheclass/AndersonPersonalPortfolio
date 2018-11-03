@@ -10,6 +10,32 @@ body {
     color: $color-grey-dark-3;
 }
 
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    text-shadow: .5rem .8rem 2.7rem rgba($color-black, .65);
+    
+    &--main {
+        display: block;
+        font-size: $default-font-size + 1.6rem;
+        font-weight: 700;
+        letter-spacing: .9rem;
+        padding: 1rem;
+    }
+    
+    &--sub {
+        display: block;
+        font-size: $default-font-size + .4rem;
+        font-weight: 100;
+        letter-spacing: 1.6rem;
+        
+        @include respond(phone) {
+            letter-spacing: .5rem;    
+        }
+    }
+}
+
 .heading-secondary {
     font-size: 3.5rem;
     font-weight: 700;
