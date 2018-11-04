@@ -2,6 +2,24 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
+/* ----- LINKS ----- */
+a:link,
+a:visited {
+    padding-bottom: 9px;
+    text-decoration: none;
+    font-size: $default-font-size - .3rem;
+    //transition: all .2s;
+
+    @include respond(phone) {
+        font-size: $default-font-size + .3rem;
+    }
+}
+
+a:hover,
+a:active {
+    border-bottom: .2rem solid $color-primary;
+}
+
 .btn {
     padding: 1.5rem 3.5rem;
     border: none;
@@ -26,12 +44,12 @@
         
         &:link,
         &:visited {
-            text-decoration: none;
+            //text-decoration: none;
             display: inline-block;
-            position: relative;
         }
         
         &:hover {
+            border: none;
             background-image: linear-gradient(to top right, rgba($color-primary, .4), rgba($color-secondary, .4));
         }
 

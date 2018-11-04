@@ -10,15 +10,7 @@
     background-size: cover;
     background-position: center;
     
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-    }
     
-    &__logo {
-        height: 10rem;
-    }
     
     &__text-box {
         @include absCenter;

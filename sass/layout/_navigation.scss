@@ -1,0 +1,98 @@
+// Main navigation
+.nav-bar {
+    
+    .row {
+        
+        .logo {
+            height: 10rem;
+            top: 0rem;
+            left: 0rem;
+        }
+
+        .main-nav {
+            float: right;
+            list-style: none;
+            margin-top: 3rem;
+            
+            li {
+                display: inline-block;
+                margin-left: 4rem;
+                
+                @include respond(phone) {
+                    margin-left: 2rem;
+                    margin-right: 1rem;
+                }
+                
+                a {
+                    &:link, 
+                    &:visited {
+                        padding-top: .8rem 0;
+                        color: $color-white;
+                        text-transform: uppercase;
+                        font-size: $default-font-size;
+                        border-bottom: .2rem solid transparent;
+                        transition: all .2s;
+
+                        @include respond(phone) {
+                            border-bottom: none;
+                        }
+                    }
+                    
+                    &:hover, 
+                    &:active {
+                        border-bottom: .2rem solid $color-primary;
+
+                        @include respond(phone) {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// sticky navigation
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to top left, rgba($color-black, .88), rgba($color-secondary, .8)), url(../img/hero.jpg);
+    box-shadow: 0 .2rem 2.5rem $color-grey-dark-1;
+    
+    .row {
+        
+        .logo {
+            display: block;
+            height: 5rem;
+            float: left !important;
+        }
+    }
+}
+
+.sticky .main-nav {
+    margin-top: 1.8rem !important;
+
+    li {
+
+        a {
+
+            &:link, 
+            &:visited {
+                //color: $color-primary !important;
+                padding: 2rem 0 !important;
+
+            }
+
+            &:hover,
+            &:active {
+                @include respond(phone) {
+                    border-bottom: none;
+                }
+            }
+        }
+    } 
+}

@@ -10,10 +10,19 @@
         <title>Anderson Personal Porfolio</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header__logo-box">
-                <img src="resources/img/Anderson-Logo.png" alt="logo" class="header__logo">
-            </div>
+        <header class="header" id="header">
+           <nav id="nav-bar" class="nav-bar">
+               <div class="row">
+                   <img src="resources/img/Anderson-Logo.png" alt="logo" class="logo"> 
+                   
+                   <ul class="main-nav js--main-nav">
+                       <li><a href="#header">Home</a></li>
+                       <li><a href="#section-project">Projects</a></li>
+                       <li><a href="#section-biography">Biography</a></li>
+                   </ul>
+               </div>
+           </nav>
+            
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -26,7 +35,7 @@
             </div>
         </header>
         <main>
-            <section class="section-project">
+            <section class="section-project js--section-project" id="section-project">
                 <!-- 2x2 matrix with the 4 fcc done projects -->
                 <div class="u-center-text u-margin-bottom-medium">
                     <h2 class="heading-secondary">My Projects</h2>
@@ -71,7 +80,7 @@
                 
             </section>
 
-            <section class="section-biography">
+            <section class="section-biography" id="section-biography">
                 <!--  -->
                 <!-- a pict for bio with border radius 50%; my name below the picture -->
                 <div class="u-center-text u-margin-bottom-medium">
@@ -121,6 +130,7 @@
 
         </footer>
         <script src="vendors/js/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
     </body>
 </html>
