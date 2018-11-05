@@ -25,6 +25,11 @@ $(document).ready(function(){
         });    
     });
     
+    //Learn more btn to section-biography
+    $('.js--scroll-to-biography').click(function() {
+        $('html, header').animate({scrollTop: $('.js--section-biography').offset().top}, 1000); 
+    });
+    
     /* Navigation scroll */
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {

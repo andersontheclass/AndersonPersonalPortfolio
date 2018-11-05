@@ -1,25 +1,41 @@
 // Main navigation
 .nav-bar {
-    
+    @include respond(phone) {
+        width: 100%;
+    }
     .row {
         
+        @include respond(phone) {
+            margin: 0 !important;
+            max-width: 90%;// if want to add another <a> text, just increment the max-width
+        }
         .logo {
             height: 10rem;
             top: 0rem;
             left: 0rem;
+            
+            @include respond(phone) {
+                //height: 7rem;
+            }
         }
 
         .main-nav {
             float: right;
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 3.5rem;
+            
+            @include respond(phone) {
+                //background-color: yellow;
+                
+            }
+            
             
             li {
                 display: inline-block;
                 margin-left: 4rem;
                 
                 @include respond(phone) {
-                    margin-left: 2rem;
+                    margin-left: 0;
                     margin-right: 1rem;
                 }
                 
@@ -34,13 +50,14 @@
                         transition: all .2s;
 
                         @include respond(phone) {
+                            font-size: $default-font-size + .5rem;
                             border-bottom: none;
                         }
                     }
                     
                     &:hover, 
                     &:active {
-                        border-bottom: .2rem solid $color-primary;
+                        border-bottom: .2rem solid $color-white;
 
                         @include respond(phone) {
                             border-bottom: none;
@@ -57,10 +74,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1.5rem;
+    padding: 1.35rem;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to top left, rgba($color-black, .88), rgba($color-secondary, .8)), url(../img/hero.jpg);
+    background-image: linear-gradient(to bottom left, rgba($color-black, .9), rgba($color-secondary, .9)), url(../img/hero.jpg);
     box-shadow: 0 .2rem 2.5rem $color-grey-dark-1;
     
     .row {
@@ -70,6 +87,7 @@
             height: 5rem;
             float: left !important;
         }
+        
     }
 }
 
@@ -77,7 +95,7 @@
     margin-top: 1.8rem !important;
 
     li {
-
+        
         a {
 
             &:link, 

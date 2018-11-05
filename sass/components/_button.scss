@@ -3,22 +3,25 @@
 // -----------------------------------------------------------------------------
 
 /* ----- LINKS ----- */
-a:link,
-a:visited {
-    padding-bottom: 9px;
-    text-decoration: none;
-    font-size: $default-font-size - .3rem;
-    //transition: all .2s;
+a {
+    &:link,
+    &:visited {
+        padding-bottom: .9rem;
+        text-decoration: none;
+        font-size: $default-font-size - .3rem;
+        //transition: all .2s;
 
-    @include respond(phone) {
-        font-size: $default-font-size + .3rem;
+        @include respond(phone) {
+            font-size: $default-font-size + .3rem;
+        }
     }
+
+    &:hover,
+    &:active {
+        border-bottom: .2rem solid $color-primary;
+    } 
 }
 
-a:hover,
-a:active {
-    border-bottom: .2rem solid $color-primary;
-}
 
 .btn {
     padding: 1.5rem 3.5rem;
