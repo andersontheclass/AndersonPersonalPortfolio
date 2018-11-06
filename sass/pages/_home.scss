@@ -2,14 +2,24 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+section {
+    padding: 8rem 0;
+}
 
+.row {
+    //max-width: 1140px;
+    margin: 0 auto;
+}
 
-.section-projects {
+.section-project {
+    //padding-bottom: 8rem;
+    background-color: $color-grey-light-1;
     
 }
 
-.section-band-bio {
-    padding-bottom: 8rem;
+.section-biography {
+    //background-color: $color-grey-dark-1;
+    //padding-bottom: 8rem;
     //background-color: #ddd;
 }
 

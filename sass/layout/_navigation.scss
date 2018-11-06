@@ -1,8 +1,9 @@
 // Main navigation
 .nav-bar {
+    /*
     @include respond(phone) {
         width: 100%;
-    }
+    }*/
     .row {
         
         @include respond(phone) {
@@ -36,6 +37,7 @@
             }
             
             li {
+                
                 display: inline-block;
                 margin-left: 4rem;
                 margin-right: 5rem;
@@ -45,7 +47,7 @@
                 }
                 
                 @include respond(tab-port) {
-                    font-size: $default-font-size + .5rem;
+                    //font-size: $default-font-size + .5rem;
                     //margin-left: 4rem;
                     margin-right: 5rem;
                 }
@@ -56,6 +58,7 @@
                 }
                 
                 a {
+                    
                     &:link, 
                     &:visited {
                         padding-top: .8rem 0;
@@ -87,10 +90,12 @@
                         
                         @include respond(tab-port) {
                             border-bottom: none;
+                            
                         }
                         
                         @include respond(tab-land) {
                             border-bottom: none !important;
+                            
                         }
                         
                         @include respond(phone) {
@@ -136,16 +141,17 @@
             &:link, 
             &:visited {
                 //color: $color-primary !important;
-                padding: 2rem 0 !important;
+                //padding: 2rem 0 !important;
 
             }
 
             &:hover,
             &:active {
- 
+                
+                /*
                 @include respond(phone) {
                     border-bottom: none;
-                }
+                }*/
             }
         }
     } 
