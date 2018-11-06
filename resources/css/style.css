@@ -177,7 +177,7 @@ p {
           transform: translateX(-70%) translateY(0); } }
       @media only screen and (max-width: 56.25em) {
         .biography-col--colored .biography__caption {
-          transform: translateX(-5%) translateY(0); } }
+          transform: translateX(-11%) translateY(0); } }
       @media only screen and (max-width: 37.5em) {
         .biography-col--colored .biography__caption {
           transform: translateX(-15%) translateY(0);
