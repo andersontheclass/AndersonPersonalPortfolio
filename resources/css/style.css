@@ -142,15 +142,16 @@ p {
     width: 90%;
     box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.5);
     font-size: 1.6rem; }
+    .biography-col--colored .biography__shape {
+      text-align: center; }
     .biography-col--colored .biography__img {
       height: 100%;
-      margin-left: 9%;
       border-radius: 55%;
       height: 25rem;
       width: 25rem; }
       @media only screen and (max-width: 56.25em) {
         .biography-col--colored .biography__img {
-          margin-left: -40%;
+          margin-left: -50%;
           width: 20rem;
           height: 20rem; } }
       @media only screen and (max-width: 37.5em) {
@@ -161,32 +162,33 @@ p {
     .biography-col--colored .biography__caption {
       position: absolute;
       margin-top: -5rem;
+      margin-left: 22%;
       font-weight: bold;
       text-transform: uppercase;
-      transform: translateX(-80%) translateY(-20%);
+      transform: translateX(100%) translateY(-10%);
       color: rgba(0, 0, 0, 0.7); }
       @media only screen and (max-width: 75em) {
         .biography-col--colored .biography__caption {
+          margin-left: 49%;
           transform: translateX(-70%) translateY(0); } }
       @media only screen and (min-width: 112.5em) {
         .biography-col--colored .biography__caption {
+          margin-left: 49%;
           transform: translateX(-70%) translateY(0); } }
       @media only screen and (max-width: 56.25em) {
         .biography-col--colored .biography__caption {
-          transform: translateX(-10%) translateY(0); } }
+          transform: translateX(-5%) translateY(0); } }
       @media only screen and (max-width: 37.5em) {
         .biography-col--colored .biography__caption {
-          transform: translateX(-10%) translateY(0);
+          transform: translateX(-15%) translateY(0);
           margin-top: -2.6rem; } }
-      .biography-col--colored .biography__caption--1 {
-        margin-left: 28%; }
-        @media only screen and (max-width: 56.25em) {
-          .biography-col--colored .biography__caption--1 {
-            margin-left: 13.7%; } }
-        @media only screen and (max-width: 37.5em) {
-          .biography-col--colored .biography__caption--1 {
-            margin-left: 14.4%;
-            margin-top: -2.8rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .biography-col--colored .biography__caption--1 {
+          margin-left: 13.7%; } }
+      @media only screen and (max-width: 37.5em) {
+        .biography-col--colored .biography__caption--1 {
+          margin-left: 14.4%;
+          margin-top: -2.8rem; } }
       .biography-col--colored .biography__caption-span {
         padding: 1rem; }
         .biography-col--colored .biography__caption-span--1 {
@@ -206,9 +208,6 @@ a:link, a:visited {
   @media only screen and (max-width: 37.5em) {
     a:link, a:visited {
       font-size: 1.9rem; } }
-
-a:hover, a:active {
-  border-bottom: 0.2rem solid #227093; }
 
 .btn {
   padding: 1.5rem 3.5rem;
@@ -295,7 +294,8 @@ a:hover, a:active {
   background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.88), rgba(255, 218, 121, 0.9)), url(../img/hero.jpg);
   overflow: hidden;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -333,7 +333,18 @@ a:hover, a:active {
   margin-top: 3.5rem; }
   .nav-bar .row .main-nav li {
     display: inline-block;
-    margin-left: 4rem; }
+    margin-left: 4rem;
+    margin-right: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .nav-bar .row .main-nav li {
+        margin-right: 5rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .nav-bar .row .main-nav li {
+        margin-right: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .nav-bar .row .main-nav li {
+        font-size: 2.1rem;
+        margin-right: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .nav-bar .row .main-nav li {
         margin-left: 0;
@@ -345,12 +356,33 @@ a:hover, a:active {
       font-size: 1.6rem;
       border-bottom: .2rem solid transparent;
       transition: all .2s; }
+      @media only screen and (max-width: 75em) {
+        .nav-bar .row .main-nav li a:link, .nav-bar .row .main-nav li a:visited {
+          transition: none;
+          border-bottom: none; } }
+      @media only screen and (min-width: 112.5em) {
+        .nav-bar .row .main-nav li a:link, .nav-bar .row .main-nav li a:visited {
+          transition: none;
+          border-bottom: none; } }
+      @media only screen and (max-width: 56.25em) {
+        .nav-bar .row .main-nav li a:link, .nav-bar .row .main-nav li a:visited {
+          transition: none;
+          border-bottom: none; } }
       @media only screen and (max-width: 37.5em) {
         .nav-bar .row .main-nav li a:link, .nav-bar .row .main-nav li a:visited {
           font-size: 2.1rem;
           border-bottom: none; } }
     .nav-bar .row .main-nav li a:hover, .nav-bar .row .main-nav li a:active {
       border-bottom: 0.2rem solid #fff; }
+      @media only screen and (max-width: 56.25em) {
+        .nav-bar .row .main-nav li a:hover, .nav-bar .row .main-nav li a:active {
+          border-bottom: none; } }
+      @media only screen and (max-width: 75em) {
+        .nav-bar .row .main-nav li a:hover, .nav-bar .row .main-nav li a:active {
+          border-bottom: none !important; } }
+      @media only screen and (min-width: 112.5em) {
+        .nav-bar .row .main-nav li a:hover, .nav-bar .row .main-nav li a:active {
+          border-bottom: none !important; } }
       @media only screen and (max-width: 37.5em) {
         .nav-bar .row .main-nav li a:hover, .nav-bar .row .main-nav li a:active {
           border-bottom: none; } }
@@ -363,6 +395,7 @@ a:hover, a:active {
   width: 100%;
   z-index: 1;
   background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.9), rgba(255, 218, 121, 0.9)), url(../img/hero.jpg);
+  background-position: bottom;
   box-shadow: 0 0.2rem 2.5rem #999; }
   .sticky .row .logo {
     display: block;

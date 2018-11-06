@@ -35,10 +35,20 @@
                 
             }
             
-            
             li {
                 display: inline-block;
                 margin-left: 4rem;
+                margin-right: 5rem;
+                
+                @include respond(tab-land) {
+                    margin-right: 5rem;
+                }
+                
+                @include respond(tab-port) {
+                    font-size: $default-font-size + .5rem;
+                    //margin-left: 4rem;
+                    margin-right: 5rem;
+                }
                 
                 @include respond(phone) {
                     margin-left: 0;
@@ -54,7 +64,17 @@
                         font-size: $default-font-size;
                         border-bottom: .2rem solid transparent;
                         transition: all .2s;
-
+                        
+                        @include respond(tab-land) {
+                            transition: none;
+                            border-bottom: none;
+                        }
+                        
+                        @include respond(tab-port) {
+                            transition: none;
+                            border-bottom: none;
+                        }
+                        
                         @include respond(phone) {
                             font-size: $default-font-size + .5rem;
                             border-bottom: none;
@@ -64,7 +84,15 @@
                     &:hover, 
                     &:active {
                         border-bottom: .2rem solid $color-white;
-
+                        
+                        @include respond(tab-port) {
+                            border-bottom: none;
+                        }
+                        
+                        @include respond(tab-land) {
+                            border-bottom: none !important;
+                        }
+                        
                         @include respond(phone) {
                             border-bottom: none;
                         }
@@ -84,10 +112,11 @@
     width: 100%;
     z-index: 1;
     background-image: linear-gradient(to bottom left, rgba($color-black, .9), rgba($color-secondary, .9)), url(../img/hero.jpg);
+    background-position: bottom;
     box-shadow: 0 .2rem 2.5rem $color-grey-dark-1;
     
     .row {
-        
+
         .logo {
             display: block;
             height: 5rem;
@@ -113,6 +142,7 @@
 
             &:hover,
             &:active {
+ 
                 @include respond(phone) {
                     border-bottom: none;
                 }
