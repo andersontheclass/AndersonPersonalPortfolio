@@ -100,7 +100,6 @@
                 //box-decoration-break: clone;
 
                 &--1 {
-                    
                     background-image: linear-gradient(to left top, rgba(113, 98, 245, 0.29), rgba(255, 218, 121, 0.37));
                 }
 
@@ -110,6 +109,35 @@
         &__text {
             margin-top: 2.8rem;
             text-align: justify;
+            
+            @include respond(tab-land) {
+                //text-align: left;
+                font-size: 1rem;
+            }
+
+            @include respond(phone) {
+                text-align: left;
+            }
+                
+            p {
+                font-size: $default-font-size + .6rem;
+                font-weight: 200;
+            }
+            
+            ul {
+                font-size: $default-font-size + .5rem;
+                font-weight: 200;
+                
+                @include respond(phone) {
+                    font-size: $default-font-size;
+                }
+                
+                li {
+                    padding: .3rem;
+                    margin-left: 2rem;
+                    list-style: square;
+                }
+            }
         }
     }
 }

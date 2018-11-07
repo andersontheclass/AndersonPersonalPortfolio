@@ -42,6 +42,11 @@
                 margin-left: 4rem;
                 margin-right: 5rem;
                 
+                // it saved my life
+                &:not(:last-child) {
+                    margin-right: 1.5rem;
+                }
+                
                 @include respond(tab-land) {
                     margin-right: 5rem;
                 }

@@ -56,8 +56,8 @@ body {
   text-rendering: optimizeLegibility; }
 
 ::selection {
-  background-color: #227093;
-  color: #fff; }
+  background-color: rgba(255, 218, 121, 0.88);
+  color: #666; }
 
 body {
   font-family: sans-serif;
@@ -196,6 +196,28 @@ p {
     .biography-col--colored .biography__text {
       margin-top: 2.8rem;
       text-align: justify; }
+      @media only screen and (max-width: 75em) {
+        .biography-col--colored .biography__text {
+          font-size: 1rem; } }
+      @media only screen and (min-width: 112.5em) {
+        .biography-col--colored .biography__text {
+          font-size: 1rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .biography-col--colored .biography__text {
+          text-align: left; } }
+      .biography-col--colored .biography__text p {
+        font-size: 2.2rem;
+        font-weight: 200; }
+      .biography-col--colored .biography__text ul {
+        font-size: 2.1rem;
+        font-weight: 200; }
+        @media only screen and (max-width: 37.5em) {
+          .biography-col--colored .biography__text ul {
+            font-size: 1.6rem; } }
+        .biography-col--colored .biography__text ul li {
+          padding: .3rem;
+          margin-left: 2rem;
+          list-style: square; }
 
 .js--show-more {
   display: none; }
@@ -269,8 +291,61 @@ a:link, a:visited {
         color: #eee; }
 
 .footer {
-  padding: 10rem 4rem;
-  font-size: 1.7rem; }
+  padding: 4rem 0;
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.95), rgba(255, 218, 121, 0.92)), url(../img/hero.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  font-size: 1.6rem;
+  color: #999; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    display: inline-block;
+    border-top: 0.1rem solid #999;
+    padding-top: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: .8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__link {
+      font-size: 1.6rem !important; } }
+  .footer__link:link, .footer__link:visited {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #fff;
+    background-image: linear-gradient(to top right, rgba(34, 112, 147, 0.5), rgba(255, 218, 121, 0.5));
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+    padding: .1rem; }
+  .footer__copyright {
+    border-top: 1px solid #999;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+    text-align: justify; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .row {
   max-width: 114rem;
@@ -364,6 +439,8 @@ a:link, a:visited {
       display: inline-block;
       margin-left: 4rem;
       margin-right: 5rem; }
+      .nav-bar .row .main-nav li:not(:last-child) {
+        margin-right: 1.5rem; }
       @media only screen and (max-width: 75em) {
         .nav-bar .row .main-nav li {
           margin-right: 5rem; } }
