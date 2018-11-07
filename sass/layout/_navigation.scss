@@ -22,7 +22,7 @@
             left: 0rem;
             
             @include respond(phone) {
-                //height: 7rem;
+                height: 7rem;
             }
         }
 
@@ -54,7 +54,7 @@
                 
                 @include respond(phone) {
                     margin-left: 0;
-                    margin-right: 1rem;
+                    margin-right: .8rem;
                 }
                 
                 a {
@@ -62,11 +62,13 @@
                     &:link, 
                     &:visited {
                         padding-top: .8rem 0;
+                        padding-bottom: 2rem;
                         color: $color-white;
                         text-transform: uppercase;
                         font-size: $default-font-size;
                         border-bottom: .2rem solid transparent;
                         transition: all .2s;
+                        
                         
                         @include respond(tab-land) {
                             transition: none;
@@ -79,7 +81,7 @@
                         }
                         
                         @include respond(phone) {
-                            font-size: $default-font-size + .5rem;
+                            font-size: $default-font-size + .33rem;
                             border-bottom: none;
                         }
                     }
@@ -89,13 +91,12 @@
                         border-bottom: .2rem solid $color-white;
                         
                         @include respond(tab-port) {
-                            border-bottom: none;
+                            //border-bottom: none;
                             
                         }
                         
                         @include respond(tab-land) {
-                            border-bottom: none !important;
-                            
+                            //border-bottom: none !important;
                         }
                         
                         @include respond(phone) {
@@ -113,7 +114,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1.35rem;
+    padding: 1.3rem;
     width: 100%;
     z-index: 1;
     background-image: linear-gradient(to bottom left, rgba($color-black, .9), rgba($color-secondary, .9)), url(../img/hero.jpg);
@@ -137,7 +138,7 @@
     li {
         
         a {
-
+            
             &:link, 
             &:visited {
                 //color: $color-primary !important;

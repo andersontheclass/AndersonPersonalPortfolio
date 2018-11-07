@@ -6,11 +6,11 @@
 a {
     &:link,
     &:visited {
-        padding-bottom: .9rem;
+        //padding-bottom: 2rem;
         text-decoration: none;
         font-size: $default-font-size - .3rem;
         //transition: all .2s;
-
+        
         @include respond(phone) {
             font-size: $default-font-size + .3rem;
         }
